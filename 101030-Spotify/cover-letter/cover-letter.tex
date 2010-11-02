@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% efd-brev.tex - exempel på brev skrivet med stilen efd-brev.
+%
+% En del kommandon är kommenterade nedan, men det bästa sättet att se
+% hur stilen fungerar är att köra latex på denna fil och sen titta på
+% den med xdvi.
+%
+% Skriven av Per Foreby (Per.Foreby@efd.lth.se)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OBSERVERA FÖLJANDE:
+%
+% * Detta är en lokalt utvecklad dokumentklass. Det betyder att om du
+%   skriver ett brev med denna klass så går det inte att formattera på
+%   en annan dator om du inte också kopierar filen efd-brev.cls. Var
+%   den filen finns ser du när du kör latex på filen. Latex talar
+%   nämligen om namnet på alla filer som den inkluderar.
+%
+% * Eftersom denna klass endast är till för att skriva brev på svenska
+%   behöver du inte skriva
+%
+%       \usepackage[T1]{fontenc}
+%       \usepackage[swedish]{babel}
+%
+%   Det görs automatiskt.
+%
+%   Du behöver inte heller ange a4paper.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{../../cls/cover-letter}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\name{Samuel Gabrielsson}
+% ------ Address ----------------------------------------------------
+\address{Bellmansv\"agen 11 2tr \\
+        152 31 S\"odert\"alje \\
+        Sweden \\
+        \ \\
+        Phone: +46 (0)8 580 86311 \\
+        Mobile: +46 (0)73 437 63 11 \\
+        \mbox{\small\tt Email: samuel.gabrielsson@gmail.com }}
+% ------ End Address ----------------------------------------------------
+\signature{\includegraphics[angle=0, scale=0.3]{../../signature/sign} \\ \ \\ Samuel Gabrielsson}		% Om denna inte är med blir det samma som \name
+\title{Application}             % Om denna utelämnas blir det ingen dokumenttitel
+
+\begin{document}
+\begin{letter}{Open application, \\
+	Stockholm, Sweden}
+
+\opening{Software Developer}           % \opening can be left out
+Dear Sir/Madam\\
+I am writing you to apply for my biggest passion, which is to continue
+software development and get a chance to evolve even more in the subject.
+
+I have studied computer science, specializing in applied mathematics. I'm
+currently employed at Combitech AB in Älvsjö as a systems engineering consultant
+for Ericsson at Linux Development Center. I started two years ago as a framework
+developer of automatic test cases for the products LOTC and SVP and later
+included OMP support. The test framework is now an Ericsson product called LAT
+and is used to test different Linux embedded operating systems by all Ericsson
+products in the department. It is even used to test IS using integrated netconf
+libraries. Today I work at the same department as a designer and tester but for
+products like ENUX, CPBS, GSDI and IS. Some of my work tasks include developing,
+updating kernel patches and building Linux Embedded Systems.
+
+During my research at the University of Toronto, I became extremely interested
+in optimization and in solving problems in the realm of operations research with
+the help of distributed algorithms. Although I didn't have any significant
+background in NP-hard combinatorial problems, I was more than willing to learn
+and did it successfully. The result of my experience working abroad together
+with a PhD student ended in a published paper. The whole experience broaden my
+will to continue programming and broaden my knowledge in software development.
+It strengthen my ability to work in a team, think analytical and structural with
+a high degree of responsibility in a stressful environment.
+
+My friends think of me as an open, outgoing and responsible person with great
+will power. Serving for the Swedish marine made me a good team worker and the
+summer work as a letter carrier strengthened my power and the ability to handle
+individual work. As one of the former committee member in LUDD, the computer
+society in the university, I'm good at organizing meetings and social
+activities.
+
+For your convenience, I have attached this letter and my CV. Thank you for your
+consideration. I look forward to hearing from you.
+\closing{Yours Sincerely,}		% Skiver ut texten + det som
+
+%\encl{Curriculum Vitae}		% Bilaga
+
+\end{letter}
+\end{document}
