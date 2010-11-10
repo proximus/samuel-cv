@@ -1,0 +1,191 @@
+\documentclass{../../cls/cv}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+%\selectlanguage{swedish}
+%\selectlanguage{english}
+\usepackage[gen]{eurosym}
+
+\author{Samuel Gabrielsson - Curriculum Vitae}
+% ------ Address ----------------------------------------------------
+
+\address{Bellmansv\"agen 11 2tr \\
+	152 31 S\"odert\"alje \\
+	Sweden \\
+	\ \\
+	Phone: +46 (0)8 580 86311 \\
+	Mobile: +46 (0)73 437 63 11 \\
+	\mbox{\small\tt Email: samuel.gabrielsson@gmail.com }}
+% ------ End Address ----------------------------------------------------
+
+\begin{document}
+\maketitle
+
+% -------- Work experience ------------------------------------
+\begin{category}{Work \\experience}
+\citem{Ericsson AB} Combitech consultant at Linux Development Center (FLJ/GL), \"Alvsj\"o, Sweden. (August 2008 -- ongoing).\\ 
+Designer (May 2010 -- ongoing). 
+\begin{itemize}
+   \item Design, develop and test Ericsson product ENUX, the GNU Linux Embedded operating system used by a Virtual Machine to emulate APZ classic run time environment for PLEX based programs such as AXE.  
+   \item Designer and tester for other Ericsson products such as CPBS, GSDI and IS.
+\end{itemize}
+Automated Function Tester (August 2008 -- April 2010). 
+\begin{itemize}
+   \item Framework developer for automated test cases. 
+   \item Develop automated test cases for Ericsson products Linux Opensource Telecom Cluster (LOTC) and SLES Virtual Platform (SVP) based on Xen.
+   \item Open Multimedia Platform (OMP) customer forum support.
+   \item Handle and solve trouble reports for all the products.
+\end{itemize}
+
+\citem{Systems Engineering Consultant}, Combitech AB (August 2008 -- ongoing). 
+
+\citem{Mail Carrier}, City-Mail Sweden AB (June 2000 -- August 2001, Summers 2002 -- 2005). 
+\begin{itemize}
+   \item Sorting and distribution.
+   \item Updating the computer-based estate register.
+\end{itemize}
+
+\citem{Substitute Teacher}, S\"odert\"alje Municipality (Fall 1999 --
+Spring 2000). \\
+Teaching junior high school students math, chemistry and physics.
+
+\citem{Military Service}, KA1 Waxholm (January 1999 -- October 1999).
+\begin{itemize}
+   \item The royal guards at the royal palace in Stockholm and security guard.
+   \item Leadership experience and basic medical education.
+   \item Handle technical equipment for advanced management.
+\end{itemize}
+\end{category}
+
+% ------- Education --------------------------------------------------
+\begin{category}{Education}
+\citem{Lule\aa\ University of Technology}, Sweden (August 2001 -- May 2008).\\
+M.Sc. in computer science specializing in applied mathematics.
+
+\citem{University of Toronto}, ON, Canada (August 2006 -- July 2007). \\
+Research assistant for professor J. Christopher Beck.
+\begin{itemize}
+   \item Research in artificial intelligence and planning.
+   \item Research in optimization, parallel and distributed algorithms and communications protocol.
+   \item Cluster setup and maintenance.
+\end{itemize}
+
+\citem{V\"asterg\aa rd High School}, S\"odert\"alje, Sweden.\\
+Natural science programme (August 1995 -- June 1998).
+\end{category}
+
+% -------- Publications ------------------------------------
+\begin{category}{Publications}
+\citembullet ``A Parallel Tabu Search Algorithm for the Quadratic Assignment Problem'', Masters thesis, Lule\aa\ University of Technology, Sweden (September 2007).
+\citembullet ``Solving Combinatorial Problems with Parallel Cooperative Solvers'', Ninth International
+Workshop on Distributed Constraint Reasoning, Brown University Providence, Rhode Island, USA (July 2007).
+\end{category}
+
+% -------- Research \\ Projects ------------------------------------
+\begin{category}{Research \\ Projects}
+\citembullet ``Modelling Security Protocol Synthesis with AI Planning'', University of Toronto, ON, Canada (December 2006).
+\citembullet ``Density Functional Theory and a Simulation of Water Absorption on a Germanium Surface'', Lule\aa\ University of Technology, Sweden (March 2005).
+\end{category}
+
+
+%-------- Activities --------------------------------------------------
+\begin{category}{Activities}
+\citem{Committee Member}, Lule\aa \ University Academic
+Computer Society (2005 -- 2006).
+\citem{Treasurer}, Lule\aa \ University Academic Computer Society
+(2004 -- 2005).
+\begin{itemize}
+\item About $600$ registered student members.
+\item Responsible for a budget of over 180 000 kr (\euro18 000).
+\end{itemize}
+\end{category}
+
+% ------- Skills ------------------------------------------------------
+\begin{category}{Skills}
+\citembullet Bash, C/C++, CSS, Expect, Haskell, HTML, Java, \LaTeX, Lisp/Scheme, Maple, Matlab,
+Mips32, MPI (OpenMPI, MPICH2), Pascal, Perl, PHP, Python, SQL, Tcl.
+\citembullet Maui Cluster Scheduler, PSpice, Red Hat crash analysis utility, TORQUE Resource Manager.
+\citembullet ClearCase, CVS, Git, SVN
+\citembullet GNU Linux (from scratch), Unix, MS-DOS, MS-Windows, Open-BSD, Free-BSD, Solaris, Be-OS.  
+\citembullet Fluent spoken/written Swedish, English, Syriac Aramaic;
+fair German; \\ beginner Chinese-Mandarin.
+\end{category}
+
+% -------- Hobbies --------------------------------------------
+%\begin{category}{Hobbies}
+%\citemnobullet Basketball, Indoor (floor) Hockey, Table Tennis
+%\end{category}
+
+% -------- Reference --------------------------------------------
+
+\begin{category}{References} 
+\citemnobullet Will be supplied on request.
+%\citem{Vice-chancellor Inge S\"oderkvist} (Thesis supervisor) \\
+%Lule\aa\ University of Technology \\
+%Department of Mathematics \\
+%S-97187 Lule\aa, Sweden \\
+%\ \\
+%Phone: +46 (0)920 492130 \\
+%Fax: +46 (0)920 491073 \\
+%Email: inge@sm.luth.se \\
+%Web site: http://www.ltu.se/staff/i/ingsor
+
+%\citem{Professor J. Christopher Beck} \\
+%University of Toronto \\
+%Department of Mechanical \& Industrial Engineering and \\
+%Department of Computer Science \\
+%5 King's College Rd. \\
+%Toronto, ON M5S 3G8, Canada \\
+%\ \\
+%Phone: +1 416 946 8854 \\
+%Fax: +1 416 878 7753 \\
+%Email: jcb@mie.utoronto.ca \\
+%Web site: http://www.mie.utoronto.ca/staff/profiles/beck 
+
+%\citem{Professor Sven \"Oberg} \\ 
+%Lule\aa \ University of Technology \\
+%Department of Mathematics and HPC2N \\
+%S-97187 Lule\aa, Sweden \\
+%\ \\
+%Phone: +46 (0)920 491066 \\
+%Mobile: +46 (0)70 6774989 \\
+%Fax: +46 (0)920 491073 \\
+%Email: sven@math.ltu.se \\
+%Web site: http://www.ltu.se/mat/staff/sven 
+
+%\citemnobullet Rikard Sp\aa ls\'eus, CityAreaManager \\
+%City-Mail Sweden AB \\
+%08-550 121 32
+\end{category}
+
+\end{document}
