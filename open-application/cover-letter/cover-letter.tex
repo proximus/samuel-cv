@@ -24,6 +24,12 @@
 %   Det görs automatiskt.
 %
 %   Du behöver inte heller ange a4paper.
+%   å  => \aa
+%   Å => \AA
+%   ä  => \"a
+%   Ä => \"A
+%   ö  => \"o
+%   Ö => \"O
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt]{../../cls/cover-letter}
@@ -33,16 +39,16 @@
 
 \name{Samuel Gabrielsson}
 % ------ Address ----------------------------------------------------
-\address{Bellmansv\"agen 11 2tr \\
-        152 31 S\"odert\"alje \\
+\address{Johannesgatan 6 lgh 1001 \\
+        111 38 Stockholm \\
         Sweden \\
         \ \\
-        Phone: +46 (0)8 580 86311 \\
-        Mobile: +46 (0)73 437 63 11 \\
+	Phone: +46 (0)1 071 57192 \\
+	Mobile: +46 (0)72 724 21 92 \\
         \mbox{\small\tt Email: samuel.gabrielsson@gmail.com }}
 % ------ End Address ----------------------------------------------------
-\signature{\includegraphics[angle=0, scale=0.3]{../../signature/sign} \\ \ \\ Samuel Gabrielsson}		% Om denna inte är med blir det samma som \name
-\title{Application}             % Om denna utelämnas blir det ingen dokumenttitel
+\signature{\includegraphics[angle=0, scale=0.3]{../../signature/sign} \\ \ \\ Samuel Gabrielsson}
+\title{Application}
 
 \begin{document}
 \begin{letter}{Open application, \\
@@ -50,42 +56,42 @@
 
 \opening{Software Developer}           % \opening can be left out
 Dear Sir/Madam\\
-I am writing you to apply for my biggest passion, which is to continue
-software development and get a chance to evolve even more in the subject.
 
-I have studied computer science, specializing in applied mathematics. I'm
-currently employed at Combitech AB in Älvsjö as a systems engineering consultant
-for Ericsson at Linux Development Center. I started two years ago as a framework
-developer of automatic test cases for the products LOTC and SVP and later
-included OMP support. The test framework is now an Ericsson product called LAT
-and is used to test different Linux embedded operating systems by all Ericsson
-products in the department. It is even used to test IS using integrated netconf
-libraries. Today I work at the same department as a designer and tester but for
-products like ENUX, CPBS, GSDI and IS. Some of my work tasks include developing,
-updating kernel patches and building Linux Embedded Systems.
+I studied computer science, specializing in applied mathematics. I am writing
+you to apply for my biggest passion in life, which is software development and
+to continue evolving further in the realm of research and development.
+
+I'm currently employed at Ericsson in Kista as a Software Developer and Team
+Leader. I develop drivers for the radio units in the Radio Base Station 6000
+series. My career started at SAAB Combitech as a consultant for Ericsson, where
+I developed a test framework in Perl which is used to run automated test cases.
+The test cases was written in Tcl/Expect but the framework can also execute
+test cases in Perl or bash and support NetConf. The test framework became a
+separate product and is now used to test different Linux embedded operating
+systems by all Ericsson products at the department. I continued at the same
+department but as a designer where I developed Linux kernel patches and pushed
+them upstreams to Linus Torvalds.
 
 During my research at the University of Toronto, I became extremely interested
-in optimization and in solving problems in the realm of operations research with
-the help of distributed algorithms. Although I didn't have any significant
-background in NP-hard combinatorial problems, I was more than willing to learn
-and did it successfully. The result of my experience working abroad together
-with a PhD student ended in a published paper. The whole experience broaden my
-will to continue programming and broaden my knowledge in software development.
-It strengthen my ability to work in a team, think analytical and structural with
-a high degree of responsibility in a stressful environment.
+in operations research, optimization and solving NP-hard combinatorial problems
+with the help of distributed algorithms. The result of my experience working
+abroad together with a PhD student ended in a published paper. The whole
+experience abroad gave me new friends for life, deepened my analytical thinking
+and broaden my knowledge in research and software development.
 
-My friends think of me as an open, outgoing and responsible person with great
-will power. Serving for the Swedish marine made me a good team worker and the
-summer work as a letter carrier strengthened my power and the ability to handle
-individual work. As one of the former committee member in LUDD, the computer
-society in the university, I'm good at organizing meetings and social
-activities.
+As one of the former committee member in LUDD, the computer society in the
+university, I'm good at organizing meetings and social activities. Serving for
+the Swedish marine strengthen my ability to work in a team, become more
+structural with a high degree of responsibility in a stressful environment.
+
+My friends and co workers think of me as an outgoing, yet calm, kindhearted and
+responsible person with great will power.
 
 For your convenience, I have attached this letter and my CV. Thank you for your
 consideration. I look forward to hearing from you.
-\closing{Yours Sincerely,}		% Skiver ut texten + det som
+\closing{Yours Sincerely,}
 
-%\encl{Curriculum Vitae}		% Bilaga
+%\encl{Curriculum Vitae}
 
 \end{letter}
 \end{document}

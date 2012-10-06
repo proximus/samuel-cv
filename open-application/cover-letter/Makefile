@@ -17,10 +17,10 @@
 # without limitation the rights to use, copy, modify, merge, publish,
 # distribute, sublicense, and/or sell copies of the Software, and to
 # permit persons to whom the Software is furnished to do so, subject to
-# the following conditions: 
+# the following conditions:
 
 # The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software. 
+# included in all copies or substantial portions of the Software.
 
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 # EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
@@ -28,7 +28,7 @@
 # IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 # CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # $Id: Makefile,v 1.18 2006-06-19 10:58:11 mairas Exp $
 
@@ -50,7 +50,7 @@ USETHUMBS = "^[^%]*thumbpdf"
 
 DATE=$(shell date +%Y-%m-%d)
 
-COPY = if test -r $(<:%.tex=%.toc); then cp $(<:%.tex=%.toc) $(<:%.tex=%.toc.bak); fi 
+COPY = if test -r $(<:%.tex=%.toc); then cp $(<:%.tex=%.toc) $(<:%.tex=%.toc.bak); fi
 RM = rm -f
 OUTDATED = echo "EPS-file is out-of-date!" && false
 
@@ -117,7 +117,7 @@ veryclean	: clean
 	$(getbibs) ; echo $$bibs ; \
 	$(geteps) ; echo $$epses ; \
 	$(manconf) ; echo  $$mandeps  ;\
-	echo "$*.dvi $@ : $< $$deps $$bibs $$epses $$mandeps" > $@ 
+	echo "$*.dvi $@ : $< $$deps $$bibs $$epses $$mandeps" > $@
 
 include $(SRC:.tex=.d)
 
@@ -136,21 +136,19 @@ $(PSF)	: %.ps : %.dvi
 $(PDF)  : %.pdf : %.tex
 	@$(PDFLATEX) $<
 
-
 show	: $(TRG)
 	  @for i in $(TRG) ; do $(XDVI) $$i & done
 
 showps	: $(PSF)
 	  @for i in $(PSF) ; do $(GH) $$i & done
 
-ps	: $(PSF) 
+ps	: $(PSF)
 
-pdf	: $(PDF) 
+pdf	: $(PDF)
 
 # TODO: This probably needs fixing
 html	: @$(DEP) $(EPSPICS)
 	  @$(L2H) $(SRC)
-
 
 
 ######################################################################

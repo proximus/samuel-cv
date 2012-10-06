@@ -3,15 +3,15 @@
 % written by Miklos Csuros csuros@cs.yale.edu
 %
 % features
-% 
+%
 % 1	\address[2] command for home and office address
 %
 % 2	category environment for resume sections
-%       
+%
 %       \citem[1]  	for items of the section with argument emphasized
 %       \citemnobullet 	for items of the section without a bullet
 %       \citembullet    for items of the section with bullet & no emphasis
-% 
+%
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{../../cls/cv}[1997/02/07 v1.1 resume class]
@@ -29,8 +29,8 @@
 
 % -------------------------------------------------------
 %  The following definitions can be changed in the LaTeX
-%  file for a different look but the same structure. The 
-%  rest of this file defines the structure and the 
+%  file for a different look but the same structure. The
+%  rest of this file defines the structure and the
 %  commands.
 % -------------------------------------------------------
 
@@ -59,7 +59,7 @@
 % - new commands
 % -------------------------------------------------------
 
-%%%%%%% \address                                       
+%%%%%%% \address
 \gdef\@addressA{\ClassWarning{resume}{%
 	No address given.\MessageBreak
 	Use \protect\address.}}
@@ -135,14 +135,14 @@
       \markright{\hfill\@author\hfill}
   \fi
   \pagestyle{myheadings}
-  \renewcommand{\thepage}{}	% because only the name is 
+  \renewcommand{\thepage}{}	% because only the name is
   				% needed in the heading and no pagenumbers
-  
+
   \setcounter{footnote}{0}%
   \let\thanks\relax
   \let\maketitle\relax\let\@makeresumetitle\relax
   \gdef\@thanks{}\gdef\@author{}\gdef\@title{}}
-  
+
 \def\@makeresumetitle{%
   \newpage
   \null
@@ -153,6 +153,6 @@
   \parbox[t]{\addresswidth}{\begin{flushright}\@addressB\end{flushright}}
   \par
   \vskip 1.5em}
-  
+
 \endinput
 
