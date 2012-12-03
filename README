@@ -1,1 +1,16 @@
-My CV shared world wide.
+README for Samuel CV
+
+* Introduction
+
+This is my CV shared world wide.
+
+* Requirements
+
+- LaTeX
+
+* Install/Build
+
+$ make
+
+Copy or view samuel-cv.pdf and samuel-letter.pdf
+
