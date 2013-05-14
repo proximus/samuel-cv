@@ -1,16 +1,13 @@
-README for Samuel CV
+# Introduction
+Curriculum vitae (CV) of my personal experience and qualifications with a friendly generic personal letter.
 
-* Introduction
+# Requirements
+sudo apt-get install texlive
 
-This is my CV shared world wide.
-
-* Requirements
-
-- LaTeX
-
-* Install/Build
-
+# Build the CV
 $ make
 
-Copy or view samuel-cv.pdf and samuel-letter.pdf
+# View CV
+$ evince samuel-cv.pdf&
+$ evince samuel-letter.pdf&
 
