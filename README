@@ -3,6 +3,7 @@ Curriculum vitae (CV) of my personal experience and qualifications with a friend
 
 # Requirements
 sudo apt-get install texlive
+sudo apt-get install texlive-lang-swedish
 
 # Build the CV
 $ make
