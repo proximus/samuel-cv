@@ -1,29 +1,4 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% efd-brev.tex - exempel på brev skrivet med stilen efd-brev.
-%
-% En del kommandon är kommenterade nedan, men det bästa sättet att se
-% hur stilen fungerar är att köra latex på denna fil och sen titta på
-% den med xdvi.
-%
-% Skriven av Per Foreby (Per.Foreby@efd.lth.se)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% OBSERVERA FÖLJANDE:
-%
-% * Detta är en lokalt utvecklad dokumentklass. Det betyder att om du
-%   skriver ett brev med denna klass så går det inte att formattera på
-%   en annan dator om du inte också kopierar filen efd-brev.cls. Var
-%   den filen finns ser du när du kör latex på filen. Latex talar
-%   nämligen om namnet på alla filer som den inkluderar.
-%
-% * Eftersom denna klass endast är till för att skriva brev på svenska
-%   behöver du inte skriva
-%
-%       \usepackage[T1]{fontenc}
-%       \usepackage[swedish]{babel}
-%
-%   Det görs automatiskt.
-%
-%   Du behöver inte heller ange a4paper.
 %   å  => \aa
 %   Å => \AA
 %   ä  => \"a
@@ -34,13 +9,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt]{../../cls/cover-letter}
 
-\usepackage{graphics}
 \usepackage{graphicx}
 
 \name{Samuel Gabrielsson}
 % ------ Address ----------------------------------------------------
-\address{Johannesgatan 6 lgh 1001 \\
-        111 38 Stockholm \\
+\address{Lindhagensgatan 59 lgh 1002 \\
+        112 43 Stockholm \\
         Sweden \\
         \ \\
 	Phone: +46 (0)1 071 57192 \\
@@ -51,26 +25,32 @@
 \title{Application}
 
 \begin{document}
-\begin{letter}{Open application, \\
-	Stockholm, Sweden}
-
+\begin{letter}{}
 \opening{Software Developer}           % \opening can be left out
-Dear Sir/Madam\\
+Dear Sir/Madam\
 
 I studied computer science, specializing in applied mathematics. I am writing
 you to apply for my biggest passion in life, which is software development and
 to continue evolving further in the realm of research and development.
 
 I'm currently employed at Ericsson in Kista as a Software Developer and Team
-Leader. I develop drivers for the radio units in the Radio Base Station 6000
-series. My career started at SAAB Combitech as a consultant for Ericsson, where
-I developed a test framework in Perl which is used to run automated test cases.
+Leader. I develop drivers for the radio hardware units used in the Radio Base
+Station 6000 series. In order to first boot and bring up the radio hardware, the
+different drivers for the many components on the board needs to be working and
+configured correctly. This is done by either creating the drivers from scratch
+using the components datasheet and the boards circuit diagram or simply by
+adapting and reusing existing drivers. In most cases we emulate the hardware
+first and write the drivers before the physical boards arrive from the factory
+to save time and money.
+
+My career started at SAAB Combitech as a consultant for Ericsson, where I
+developed a test framework in Perl which is used to run automated test cases.
 The test cases was written in Tcl/Expect but the framework can also execute
-test cases in Perl or bash and support NetConf. The test framework became a
+test cases in Perl or bash and also support NetConf. The test framework became a
 separate product and is now used to test different Linux embedded operating
-systems by all Ericsson products at the department. I continued at the same
-department but as a designer where I developed Linux kernel patches and pushed
-them upstreams to Linus Torvalds.
+systems by all Ericsson products at the department. I continued in the same
+department but as a designer where I began to develop Linux kernel patches and
+pushed upstreams to Linus Torvalds.
 
 During my research at the University of Toronto, I became extremely interested
 in operations research, optimization and solving NP-hard combinatorial problems
@@ -90,8 +70,6 @@ responsible person with great will power.
 For your convenience, I have attached this letter and my CV. Thank you for your
 consideration. I look forward to hearing from you.
 \closing{Yours Sincerely,}
-
-%\encl{Curriculum Vitae}
 
 \end{letter}
 \end{document}

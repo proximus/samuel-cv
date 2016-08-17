@@ -23,12 +23,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \LoadClass[a4paper]{letter}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[english]{babel}%
+\RequirePackage[english]{babel}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Main code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \setlength{\topmargin}{0pt}
 \setlength{\headheight}{0pt}
 \setlength{\headsep}{0pt}
@@ -36,7 +35,7 @@
 
 \indentedwidth=.3\textwidth
 
-%%% Svensk byrÂkratdatum ≈≈≈≈-MM-DD
+% Swedish date YYYY-MM-DD
 \gdef\@date{\number\year--%
   \ifnum\month<10 0\fi\number\month--%
   \ifnum\day<10 0\fi\number\day}
@@ -58,7 +57,6 @@
          \toaddress\par
       }
    \fi
-   \vspace{11\parskip}\\%
    #1\vspace{6pt}\par\nobreak%
 }
 
@@ -66,7 +64,7 @@
   \stopbreaks
   \noindent
   \parbox{\textwidth}{\raggedright
-       \ignorespaces #1\\[5\medskipamount]%% changed 20 Jan 88
+       \ignorespaces #1\\[5\medskipamount]%
        \ifx\@empty\fromsig
            \fromname
        \else \fromsig \fi\strut}%
