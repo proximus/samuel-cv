@@ -4,4 +4,7 @@ cover-letter.d
 cover-letter.log
 cv.aux
 cv.d
+cv.fdb_latexmk
+cv.fls
 cv.log
+cv.out
