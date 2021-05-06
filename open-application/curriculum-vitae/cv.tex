@@ -1,193 +1,283 @@
-\documentclass{../../cls/cv}
-
-\renewcommand{\categoryfont}{\sc}
-
-%
-% set the space used for category titles here:
-% use the same value for oddsidemargin and marginparwidth [the latter
-% 		will be reset to account for marginparsep]
-%
-\setlength{\oddsidemargin}{0.75in}
-\setlength{\marginparwidth}{1.1in}
-%
-% calculate other dimensions [textwidth and evensidemargin]
-% in function of oddsidemargin and marginparwidth:
-% would be nicer to put in the class file...
-%
-\addtolength{\marginparwidth}{-\marginparsep}
- \setlength{\evensidemargin}{\oddsidemargin}
- \setlength{\textwidth}{\paperwidth}
- \addtolength{\textwidth}{-2in}
- \addtolength{\textwidth}{-2\oddsidemargin}
- \addtolength{\textwidth}{\marginparwidth}
- \addtolength{\textwidth}{\marginparsep}
-%
-%
-\setlength{\topmargin}{-1.25in}
-%
-%
-\renewcommand{\labelcitem}{$\diamond$}
-\renewcommand{\labelitemi}{$\cdot$}
-\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
-\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
-\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
-
-%\selectlanguage{swedish}
-%\selectlanguage{english}
-\usepackage[gen]{eurosym}
-
-\author{Samuel Gabrielsson - Curriculum Vitae}
-
 %===============================================================================
-% Address
+%
+%         FILE: cv.tex
+%
+%        USAGE: ---
+%
+%  DESCRIPTION: ---
+%
+%      OPTIONS: ---
+% REQUIREMENTS: ---
+%         BUGS: ---
+%        NOTES: ---
+%  ORIG AUTHOR: Samuel Gabrielsson <samuel.gabrielsson@gmail.com>
+% ORGANIZATION: ---
+%      VERSION: 1.0
+%      CREATED: 2021-05-04 13:46:31
+%     REVISION: ---
+%      CHANGES: ---
+%
 %===============================================================================
-\address{Lindhagensgatan 59 lgh 1002 \\
-	112 43 Stockholm \\
-	Sweden \\
-	\ \\
-	Phone: +46 (0)1 071 57192 \\
-	Mobile: +46 (0)72 724 21 92 \\
-	\mbox{\small\tt Email: samuel.gabrielsson@gmail.com }}
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% Configure
+\moderncvstyle{classic}             % Style options: casual, classic, banking, oldstyle and fancy
+\moderncvcolor{blue}                % Color options
+\usepackage[scale=0.75]{geometry}   % Adjust the page margins
+
+% Personal data
+\name{Samuel}{Gabrielsson}
+%\title{Resumé Title}
+\address{Saitama AB}{Lindhagensgatan 59}{112 43 Stockholm}
+\phone[mobile]{+46~(2)72~152~42~28}
+\email{samuel.gabrielsson@gmail.com}
+%\homepage{www.ludd.ltu.se/~proximus}
+
+\photo[64pt][0.4pt]{profile-picture}
+
+% Social icons
+\social[linkedin]{samuelgabrielsson}
+\social[github]{proximus}
 
 \begin{document}
-\maketitle
+%===============================================================================
+% Resume/CV Content
+%===============================================================================
+\makecvtitle
 
 %===============================================================================
 % Work experience
 %===============================================================================
-\begin{category}{Work \\experience}
-\citem{Ericsson AB}, Radio Software Department, Kista, Sweden. (June 2011 -- Ongoing)\\
-Software Developer and Team Leader
+\section{Experience}
+\cventry{2018 -- Ongoing}{Chief Executive Officer (CEO)}{Saitama AB}{Stockholm}{Sweden}{
+Owner and founder of the consultant company Saitama AB.
 \begin{itemize}
-   \item Develop and test radio software drivers to support 3G, 4G and 5G hardware products.
-   \item Short term assignment (3 months) at the hardware department in Ottawa as a software integrator for Platform 5.2 AIR 32 products.
-   \item Act as a technical Scrum/Kanban Master to lead and coach a Cross-Functional Driver team of 10 people. Conduct daily scrum meetings, sprint retrospective meetings, keep statistics of flow, eliminate waste and help Product Owner.
+\item \textbf{\textit{Consultant at Ericsson AB - Systems and Technology (R\&D)}}\newline{}
+Platform development of 5G and 6G...
 \end{itemize}
+}
 
-\citem{Combitech}, Consultant at Ericsson AB Linux Center, \"Alvsj\"o, Sweden. (August 2008 -- May 2011)\\
-Software Developer (May 2010 -- May 2011)
+\cventry{2016--2018}{Senior Software Architect and Design}{Realtime Embedded AB}{Stockholm}{Sweden}{
 \begin{itemize}
-   \item Develop drivers and Linux kernel patches for the Ericsson Linux distribution called ENUX, which is used to run a Virtual Machine to emulate APZ classic run time environment for PLEX based programs such as AXE.
-   \item Designer and tester for other Ericsson products such as CPBS, GSDI and IS.
+\item \textbf{\textit{Consultant at NorthStar}}\newline{}
+Development of NorthStar Advanced Connected Energy (ACE) gateway smart battery
+system.
+    \begin{itemize}
+    \item Implement external alarm handling for the battery system. Ensure that
+          the software can trigger and control relays through the GPIO pins in
+          the gateway when correct signaling through IPC messages are received.
+    \item Implement functional tests and libraries/packages using the 9pm test
+          framework.
+    \end{itemize}
+\item \textbf{\textit{Consultant at Vanderbilt (former Bewator)}}\newline{}
+Development of Linux Kernel drivers for access control system called
+Omnis. The hardware used was called E100 which is developed on site
+and is similar to AT91SAM9x5-EK.
+    \begin{itemize}
+    \item Write GPIO test application to control relays.
+    \item Write Atmel AT91 ADC test application to read voltage raw values.
+    \item Write Linux kernel and device tree patch to enable USB-B gadget and
+          Ethernet over USB.
+    \item Write Linux kernel driver and application for 74VHC595 8-bit shift
+          register with output latches in order to control via sysfs LEDs, input
+          ports and RS485 card readers.
+    \item Write Linux kernel driver and test application for Magstripe
+          (Clock/Data) and Wiegand (Data/Data) card readers.
+    \item Write a firmware upgrade/flash script to automatically update the
+          system using the SD/MMC card during bootup.
+    \item Modify and patch the bootloader from Atmel called at91bootstrap in
+          order to fix bugs and enable bootup of SD/MMC or NAND flash.
+    \end{itemize}
 \end{itemize}
-Automated Function Tester (August 2008 -- April 2010)
-\begin{itemize}
-   \item Framework developer for automated test cases.
-   \item Develop automated test cases for Ericsson products Linux Opensource Telecom Cluster (LOTC) and SLES Virtual Platform (SVP) based on Xen.
-   \item Open Multimedia Platform (OMP) customer forum support.
-   \item Handle and solve trouble reports for all the products.
-\end{itemize}
+}
 
-\citem{University of Toronto}, ON, Canada (August 2006 -- July 2007) \\
-Research assistant for professor J. Christopher Beck.
-\begin{itemize}
-   \item Research in artificial intelligence and planning.
-   \item Research in optimization, parallel and distributed algorithms and communications protocol.
-   \item Cluster setup and maintenance.
-\end{itemize}
+\cventry{2011--2016}{Team Leader/Software Developer}{Ericsson AB}{Stockholm}{Sweden}{
+Employed at Ericsson in Kista as a Software Developer and Team Leader. I
+developed drivers for the radio hardware units used in the Radio Base Station
+6000 series. In order to first boot and bring up the radio hardware, the
+different drivers for the many components on the board needs to be working and
+configured correctly. This is done by either creating the drivers from scratch
+using the components datasheet and the boards circuit diagram or simply by
+adapting and reusing existing drivers. In most cases we emulate the hardware
+first and then write the drivers, before the physical boards arrive from the
+factory, to save time and money.
+    \begin{itemize}
+    \item Development of radio software drivers for the Radio SW platforms and
+          Radio Hardware emulation. Board bringup and integration of hardware
+          products like Antenna Integrated Radio unit (AIR), Micro Radios,
+          Next Generation Radios and the 5G Program. Other side tasks include
+          modularizing parts of the Radio SW code, introducing Git, Gerrit,
+          Jenkins, BitBake and Autotools.
+    \item Short term assignment (3 months) at the hardware department in Ottawa
+          as a software integrator for Platform 5.2 AIR 32 products.
+    \item Act as a technical Scrum/Kanban Master to lead and coach a
+          Cross-Functional Driver team of 10 people. Conduct daily scrum
+          meetings, sprint rerospective meetings, keep statistics of flow,i
+          eliminate waste and help Product Owner.
+    \end{itemize}
+}
 
-%\citem{City-Mail Sweden AB}, Mail Carrier (June 2000 -- August 2001, Summers 2002 -- 2005)
-%\begin{itemize}
-%   \item Sorting and distribution.
-%   \item Updating the computer-based estate register.
-%\end{itemize}
+\cventry{2008--2011}{Software Developer}{SAAB Combitech}{Stockholm}{Sweden}{
+My career started at SAAB Combitech as a consultant for Ericsson AB Linux
+Center in Älvsjö and Telefonplon. There, I developed a test framework in Perl
+which is used to run automated test cases. The test cases was written in
+Tcl/Expect but the framework can also execute test cases in Perl or Bash and
+also support NetConf. The test framework became a separate product and was used
+to test different Linux embedded operating systems by many Ericsson products at
+the department. I continued in the same department but as a designer where I
+began to develop Linux kernel patches and pushed upstream to Linus Torvalds.
+    \begin{itemize}
+    \item Develop drivers and Linux kernel patches for the Ericsson Linux
+          distribution called ENUX, which is used to run a Virtual Machine to
+          emulate APZ classic run time environment for PLEX based programs such
+          as AXE.
+    \item Designer and tester for other Ericsson platform products such as CPBS,
+          GSDI and IS running on GEP board hardware.
+    \item Framework developer for automated test cases.
+    \item Develop automated test cases for Ericsson products Linux Open-source
+          Telecom Cluster (LOTC) and SLES Virtual Platform (SVP) based on Xen.
+    \item Open Multimedia Platform (OMP) customer forum support.
+    \item Handle and solve trouble reports for all the products.
+    \end{itemize}
+}
 
-\citem{S\"odert\"alje Municipality}, Substitute Teacher (Fall 1999 -- Spring 2000) \\
-Teaching junior high school students math, chemistry and physics.
+\cventry{2006--2007}{Research Assistant}{University of Toronto}{Toronto}{Canada}{
+I worked as a research assistant for professor J. Christopher Beck at the
+Department of Mechanical and Industrial Engineering. My stay there was funded
+by a scholarship from the University of Toronto (UofT) and Toronto Intelligent
+Decision Engineering Laboratory (TIDEL). During my research, I became extremely
+interested in operations research, optimization and solving NP-hard
+combinatorial problems with the help of distributed algorithms. Together with
+another PhD student, we published a paper and the whole experience abroad gave
+me new friends for life, deepened my analytical thinking and broaden my
+knowledge in research and software development.
+    \begin{itemize}
+    \item Research in artificial intelligence and planning. Published paper:
+          "Modelling Security Protocol Synthesis with AI Planning", UofT TIDEL,
+          ON, Canada.
+    \item Research in optimization, parallel and distributed algorithms and
+          communications protocol. Published paper: "Solving Combinatorial
+          Problems with Parallel Cooperative Solvers", Ninth International
+          Workshop on Distributed Constraint Reasoning, Brown University
+          Providence, Rhode Island, USA.
+    \item MPI Cluster Computing, installation and configuration.
+    \end{itemize}
+}
 
-\citem{Military Service}, KA1 Waxholm (January 1999 -- October 1999)
-\begin{itemize}
-   \item The royal guards at the royal palace in Stockholm and security guard.
-   \item Leadership experience and basic medical education.
-   \item Handle technical equipment for advanced management.
-\end{itemize}
-\end{category}
+%\cventry{2000--2001, Summers 2002--2005}{Mail Carrier}{City-Mail}{Stockholm}{Sweden}{
+%    \begin{itemize}
+%    \item Sorting and distribution.
+%    \item Updating the computer-based estate register.
+%    \end{itemize}
+%}
+
+%\cventry{1999--2000}{Substitute Teacher}{S\"odert\"alje Municipality}{S\"odert\"alje}{Sweden}
+%{Teaching junior high school students math, chemistry and physics.}
+
+%\cventry{1999--1999}{Military Service, KA1 Waxholm}{Swedish Government}{Stockholm}{Sweden}{
+%    \begin{itemize}
+%    \item The royal guards at the royal palace in Stockholm and security guard.
+%    \item Leadership experience and basic medical education.
+%    \item Handle technical equipment for advanced management.
+%    \end{itemize}
+%}
+
+%===============================================================================
+% Programming Skills
+%===============================================================================
+\section{Skill matrix}
+\cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
+\cvskilllegend*[1em]{}% adjust post spacing
+\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
+\cvskillentry*{Language:}{3}{Python}{2}{I'm so experienced in Python and have realised a million projects. At least.}
 
 %===============================================================================
 % Education
 %===============================================================================
-\begin{category}{Education}
-\citem{Lule\aa\ University of Technology}, Sweden (August 2001 -- May 2008)\\
-M.Sc. in computer science specializing in applied mathematics.
+\section{Education}
+\cventry{2001--2006}{M.Sc. Computer Science \& Engineering}{Luleå University of Technology}{Luleå}{Sweden}
+{Specialized in Applied Mathematics}
+\subsection{Master thesis}
+\cvitem{title}{\emph{A Parallel Tabu Search Algorithm for the Quadratic Assignment Problem}}
+\cvitem{supervisors}{Professor J. Christopher Beck - University of Toronto \& Professor Inge Söderkvist - Luleå University of Technology}
+\cvitem{description}{Find optimal solutions for a quadratic assignment problem using the tabu search algorithm on a cluster.}
 
-\citem{V\"asterg\aa rd High School}, S\"odert\"alje, Sweden\\
-Natural science programme (August 1995 -- June 1998).
-\end{category}
+\cventry{1995--1998}{Natural Science Programme}{V\"asterg\aa rd High School}{S\"odert\"alje}{Sweden}{}
 
-%===============================================================================
-% Publications
-%===============================================================================
-\begin{category}{Publications}
-\citembullet ``A Parallel Tabu Search Algorithm for the Quadratic Assignment Problem'', Masters thesis, Lule\aa\ University of Technology, Sweden (September 2007).
-\citembullet ``Solving Combinatorial Problems with Parallel Cooperative Solvers'', Ninth International
-Workshop on Distributed Constraint Reasoning, Brown University Providence, Rhode Island, USA (July 2007).
-\end{category}
-
-%===============================================================================
-% Research Projects
-%===============================================================================
-\begin{category}{Research \\ Projects}
-\citembullet ``Modelling Security Protocol Synthesis with AI Planning'', University of Toronto, ON, Canada (December 2006).
-\citembullet ``Density Functional Theory and a Simulation of Water Absorption on a Germanium Surface'', Lule\aa\ University of Technology, Sweden (March 2005).
-\end{category}
-
-%===============================================================================
-% Activities
-%===============================================================================
-\begin{category}{Activities}
-\citem{Committee Member}, Lule\aa \ University Academic Computer Society (2005 -- 2006)
-\citem{Treasurer}, Lule\aa \ University Academic Computer Society (2004 -- 2005)
-\begin{itemize}
-\item About $600$ registered student members.
-\item Responsible for a budget of over 180 000 kr (\euro18 000).
-\end{itemize}
-\end{category}
-
-%===============================================================================
-%  Skills
-%===============================================================================
-\begin{category}{Skills}
-\citembullet Bash, C/C++, CSS, Expect, Haskell, HTML, Java, \LaTeX, Lisp/Scheme, Maple, Matlab,
-Mips32, MPI (OpenMPI, MPICH2), Pascal, Perl, PHP, Python, Ruby, SQL, Tcl.
-\citembullet Maui Cluster Scheduler, PSpice, Red Hat crash analysis utility, TORQUE Resource Manager, BitBake, Yocto, OpenEmbedded.
-\citembullet ClearCase, CVS, Gerrit, Git, Jenkins, SVN.
-\citembullet GNU Linux (from scratch), OSE, Solaris, Open-BSD, Free-BSD, Be-OS, MS-DOS, MS-Windows.
-\citembullet Fluent spoken/written Swedish, English, Syriac Aramaic; fair German; beginner Chinese-Mandarin.
-\end{category}
-
-%===============================================================================
-% Hobbies
-%===============================================================================
-%\begin{category}{Hobbies}
-%\citemnobullet CrossFit, Indoor (floor) Hockey, Table Tennis
+%%===============================================================================
+%% Publications
+%%===============================================================================
+%\begin{category}{Publications}
+%\citembullet ``A Parallel Tabu Search Algorithm for the Quadratic Assignment Problem'', Masters thesis, Lule\aa\ University of Technology, Sweden (September 2007).
+%\citembullet ``Solving Combinatorial Problems with Parallel Cooperative Solvers'', Ninth International
+%Workshop on Distributed Constraint Reasoning, Brown University Providence, Rhode Island, USA (July 2007).
 %\end{category}
-
-%===============================================================================
-% Reference
-%===============================================================================
-\begin{category}{References}
-\citemnobullet Will be supplied on request.
-%\citem{Vice-chancellor Inge S\"oderkvist} (Thesis supervisor) \\
-%Lule\aa\ University of Technology \\
-%Department of Mathematics \\
-%S-97187 Lule\aa, Sweden \\
-%\ \\
-%Phone: +46 (0)920 492130 \\
-%Fax: +46 (0)920 491073 \\
-%Email: inge@sm.luth.se \\
-%Web site: http://www.ltu.se/staff/i/ingsor
-
-%\citem{Professor J. Christopher Beck} \\
-%University of Toronto \\
-%Department of Mechanical \& Industrial Engineering and \\
-%Department of Computer Science \\
-%5 King's College Rd. \\
-%Toronto, ON M5S 3G8, Canada \\
-%\ \\
-%Phone: +1 416 946 8854 \\
-%Fax: +1 416 878 7753 \\
-%Email: jcb@mie.utoronto.ca \\
-%Web site: http://www.mie.utoronto.ca/staff/profiles/beck
-\end{category}
-
+%
+%%===============================================================================
+%% Research Projects
+%%===============================================================================
+%\begin{category}{Research \\ Projects}
+%\citembullet ``Modelling Security Protocol Synthesis with AI Planning'', University of Toronto, ON, Canada (December 2006).
+%\citembullet ``Density Functional Theory and a Simulation of Water Absorption on a Germanium Surface'', Lule\aa\ University of Technology, Sweden (March 2005).
+%\end{category}
+%
+%%===============================================================================
+%% Activities
+%%===============================================================================
+%\begin{category}{Activities}
+%\citem{Committee Member}, Lule\aa \ University Academic Computer Society (2005 -- 2006)
+%\citem{Treasurer}, Lule\aa \ University Academic Computer Society (2004 -- 2005)
+%\begin{itemize}
+%\item About $600$ registered student members.
+%\item Responsible for a budget of over 180 000 kr (\euro18 000).
+%\end{itemize}
+%\end{category}
+%
+%%===============================================================================
+%%  Skills
+%%===============================================================================
+%\begin{category}{Skills}
+%\citembullet Bash, C/C++, CSS, Expect, Haskell, HTML, Java, \LaTeX, Lisp/Scheme, Maple, Matlab,
+%Mips32, MPI (OpenMPI, MPICH2), Pascal, Perl, PHP, Python, Ruby, SQL, Tcl.
+%\citembullet Maui Cluster Scheduler, PSpice, Red Hat crash analysis utility, TORQUE Resource Manager, BitBake, Yocto, OpenEmbedded.
+%\citembullet ClearCase, CVS, Gerrit, Git, Jenkins, SVN.
+%\citembullet GNU Linux (from scratch), OSE, Solaris, Open-BSD, Free-BSD, Be-OS, MS-DOS, MS-Windows.
+%\citembullet Fluent spoken/written Swedish, English, Syriac Aramaic; fair German; beginner Chinese-Mandarin.
+%\end{category}
+%
+%%===============================================================================
+%% Hobbies
+%%===============================================================================
+%%\begin{category}{Hobbies}
+%%\citemnobullet CrossFit, Indoor (floor) Hockey, Table Tennis
+%%\end{category}
+%
+%%===============================================================================
+%% Reference
+%%===============================================================================
+%\begin{category}{References}
+%\citemnobullet Will be supplied on request.
+%%\citem{Vice-chancellor Inge S\"oderkvist} (Thesis supervisor) \\
+%%Lule\aa\ University of Technology \\
+%%Department of Mathematics \\
+%%S-97187 Lule\aa, Sweden \\
+%%\ \\
+%%Phone: +46 (0)920 492130 \\
+%%Fax: +46 (0)920 491073 \\
+%%Email: inge@sm.luth.se \\
+%%Web site: http://www.ltu.se/staff/i/ingsor
+%
+%%\citem{Professor J. Christopher Beck} \\
+%%University of Toronto \\
+%%Department of Mechanical \& Industrial Engineering and \\
+%%Department of Computer Science \\
+%%5 King's College Rd. \\
+%%Toronto, ON M5S 3G8, Canada \\
+%%\ \\
+%%Phone: +1 416 946 8854 \\
+%%Fax: +1 416 878 7753 \\
+%%Email: jcb@mie.utoronto.ca \\
+%%Web site: http://www.mie.utoronto.ca/staff/profiles/beck
+%\end{category}
+%
 \end{document}
