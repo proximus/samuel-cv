@@ -1,10 +1,17 @@
+# VIM
 *.swp
-cover-letter.aux
-cover-letter.d
-cover-letter.log
-cv.aux
-cv.d
-cv.fdb_latexmk
-cv.fls
-cv.log
-cv.out
+
+# LaTeX
+*.aux
+*.d
+*.log
+*.aux
+*.d
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+
+# BibTeX
+*.bbl
+*.blg

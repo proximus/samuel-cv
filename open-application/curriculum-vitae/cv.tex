@@ -39,6 +39,10 @@
 \social[linkedin]{samuelgabrielsson}
 \social[github]{proximus}
 
+% BibTex adjustments
+%   - Show numerical labels in the bibliography
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
 \begin{document}
 %===============================================================================
 % Resume/CV Content
@@ -99,7 +103,7 @@ developed drivers for the radio hardware units used in the Radio Base Station
 6000 series. In order to first boot and bring up the radio hardware, the
 different drivers for the many components on the board needs to be working and
 configured correctly. This is done by either creating the drivers from scratch
-using the components datasheet and the boards circuit diagram or simply by
+using the components data sheet and the boards circuit diagram or simply by
 adapting and reusing existing drivers. In most cases we emulate the hardware
 first and then write the drivers, before the physical boards arrive from the
 factory, to save time and money.
@@ -108,13 +112,13 @@ factory, to save time and money.
           Radio Hardware emulation. Board bringup and integration of hardware
           products like Antenna Integrated Radio unit (AIR), Micro Radios,
           Next Generation Radios and the 5G Program. Other side tasks include
-          modularizing parts of the Radio SW code, introducing Git, Gerrit,
-          Jenkins, BitBake and Autotools.
+          splitting parts of the Radio SW code into modules, introducing Git,
+          Gerrit, Jenkins, BitBake and Autotools.
     \item Short term assignment (3 months) at the hardware department in Ottawa
           as a software integrator for Platform 5.2 AIR 32 products.
     \item Act as a technical Scrum/Kanban Master to lead and coach a
           Cross-Functional Driver team of 10 people. Conduct daily scrum
-          meetings, sprint rerospective meetings, keep statistics of flow,i
+          meetings, sprint retrospective meetings, keep statistics of flow,i
           eliminate waste and help Product Owner.
     \end{itemize}
 }
@@ -122,7 +126,7 @@ factory, to save time and money.
 
 \cventry{2008--2011}{Software Developer}{SAAB Combitech}{Stockholm}{Sweden}{
 My first consultant job started at SAAB Combitech for Ericsson AB Linux Center
-in Älvsjö and Telefonplon. There, I developed a test framework in Perl which is
+in Älvsjö and Telefonplan. There, I developed a test framework in Perl which is
 used to run automated test cases. The test cases was written in Tcl/Expect but
 the framework can also execute test cases in Perl or Bash and also support
 NetConf. The test framework became a separate product and was used to test
@@ -152,9 +156,9 @@ by a scholarship from the University of Toronto (UofT) and Toronto Intelligent
 Decision Engineering Laboratory (TIDEL). During my research, I became extremely
 interested in operations research, optimization and solving NP-hard
 combinatorial problems with the help of distributed algorithms. Together with
-another PhD student, we published a paper and the whole experience abroad gave
-me new friends for life, deepened my analytical thinking and broaden my
-knowledge in research and software development.
+another PhD student, we published a paper\cite{DuaGab2007} and the whole
+experience abroad gave me new friends for life, deepened my analytical thinking
+and broaden my knowledge in research and software development.
     \begin{itemize}
     \item Research in artificial intelligence and planning. Published paper:
           "Modelling Security Protocol Synthesis with AI Planning", UofT TIDEL,
@@ -169,23 +173,35 @@ knowledge in research and software development.
 }
 \bigskip
 
-%\cventry{2000--2001, Summers 2002--2005}{Mail Carrier}{City-Mail}{Stockholm}{Sweden}{
-%    \begin{itemize}
-%    \item Sorting and distribution.
-%    \item Updating the computer-based estate register.
-%    \end{itemize}
-%}
+%===============================================================================
+% Misc activities/jobs
+%===============================================================================
+\subsection{Miscellaneous}
+\cventry{2006--2006}{Committee Member}{Lule\aa \ University Academic Computer Society}{City}{Lule\aa}
+{Served 600 registered student members.}
+\cventry{2004--2005}{Treasurer}{Lule\aa \ University Academic Computer Society}{City}{Lule\aa}
+{Responsible for a budget of over 180 000 SEK.}
+\bigskip
 
-%\cventry{1999--2000}{Substitute Teacher}{S\"odert\"alje Municipality}{S\"odert\"alje}{Sweden}
-%{Teaching junior high school students math, chemistry and physics.}
+\cventry{2000--2001, Summers 2002--2005}{Mail Carrier}{City-Mail}{Stockholm}{Sweden}{
+    \begin{itemize}
+    \item Sorting and distribution.
+    \item Updating the computer-based estate register.
+    \end{itemize}
+}
+\bigskip
 
-%\cventry{1999--1999}{Military Service, KA1 Waxholm}{Swedish Government}{Stockholm}{Sweden}{
-%    \begin{itemize}
-%    \item The royal guards at the royal palace in Stockholm and security guard.
-%    \item Leadership experience and basic medical education.
-%    \item Handle technical equipment for advanced management.
-%    \end{itemize}
-%}
+\cventry{1999--2000}{Substitute Teacher}{S\"odert\"alje Municipality}{S\"odert\"alje}{Sweden}
+{Teaching junior high school students math, chemistry and physics.}
+\bigskip
+
+\cventry{1999--1999}{Military Service, KA1 Waxholm}{Swedish Government}{Stockholm}{Sweden}{
+    \begin{itemize}
+    \item The royal guards at the royal palace in Stockholm and security guard.
+    \item Leadership experience and basic medical education.
+    \item Handle technical equipment for advanced management.
+    \end{itemize}
+}
 
 %===============================================================================
 % Education
@@ -201,45 +217,18 @@ knowledge in research and software development.
 
 \cventry{1995--1998}{Natural Science Programme}{V\"asterg\aa rd High School}{S\"odert\"alje}{Sweden}{}
 
-%%===============================================================================
-%% Publications
-%%===============================================================================
-%\begin{category}{Publications}
-%\citembullet ``A Parallel Tabu Search Algorithm for the Quadratic Assignment Problem'', Masters thesis, Lule\aa\ University of Technology, Sweden (September 2007).
-%\citembullet ``Solving Combinatorial Problems with Parallel Cooperative Solvers'', Ninth International
-%Workshop on Distributed Constraint Reasoning, Brown University Providence, Rhode Island, USA (July 2007).
-%\end{category}
-%
-%%===============================================================================
-%% Research Projects
-%%===============================================================================
-%\begin{category}{Research \\ Projects}
-%\citembullet ``Modelling Security Protocol Synthesis with AI Planning'', University of Toronto, ON, Canada (December 2006).
-%\citembullet ``Density Functional Theory and a Simulation of Water Absorption on a Germanium Surface'', Lule\aa\ University of Technology, Sweden (March 2005).
-%\end{category}
-%
-%%===============================================================================
-%% Activities
-%%===============================================================================
-%\begin{category}{Activities}
-%\citem{Committee Member}, Lule\aa \ University Academic Computer Society (2005 -- 2006)
-%\citem{Treasurer}, Lule\aa \ University Academic Computer Society (2004 -- 2005)
-%\begin{itemize}
-%\item About $600$ registered student members.
-%\item Responsible for a budget of over 180 000 kr (\euro18 000).
-%\end{itemize}
-%\end{category}
-%
 %===============================================================================
 %  Skills
 %===============================================================================
 \section{Skills}
 \cvskilllegend*[1em]{}  % Adjust post spacing
-\cvskillhead[-0.1em]    % Insert standard legend in english and adjust padding
+\cvskillhead[-0.1em]    % Insert standard legend in English and adjust padding
+
+% Programming
 \cvskillentry*{Programming Languages:}{3}{Ansible}{2}{I use Ansible, YAML and Redfish for zero-touch automation on SuperMicro and Dell PowerEdge machines that has BMC/IPMI/iDRAC to configure BIOS, autoinstall and setup real-time OS.}
 \cvskillentry{}{2}{Assembler}{1}{Mips32 course at university.}
-\cvskillentry{}{5}{Bash}{23}{Used in most of my work projects and at home to quickly write scripts with minimum dependencies. Also used together with sed, awk and regular expressions.}
-\cvskillentry{}{4}{C/C++}{15}{I have used C/C++ in most of the big Linux embedded projects, linux applications, kernel modules and patches.}
+\cvskillentry{}{5}{Bash}{23}{Used in most of my work projects and at home to quickly write scripts with minimum dependencies. Also used together with Sed, Awk and Regular Expressions.}
+\cvskillentry{}{4}{C/C++}{15}{I have used C/C++ in most of the big Linux embedded projects, Linux applications, kernel modules and patches.}
 \cvskillentry{}{2}{CSS}{2}{Used to develop my personal homepage a long time ago.}
 \cvskillentry{}{3}{Haskell}{2}{I learned recursive programming at university.}
 \cvskillentry{}{3}{HTML}{2}{Used to develop my personal homepage a long time ago.}
@@ -249,15 +238,16 @@ knowledge in research and software development.
 \cvskillentry{}{3}{Maple}{2}{Used in mathematics courses at the university.}
 \cvskillentry{}{3}{Matlab}{5}{Used in mathematics courses at the university and while working at Ericsson research.}
 \cvskillentry{}{3}{Pascal}{3}{Self-taught Turbo Pascal as a child.}
-\cvskillentry{}{4}{Perl}{7}{Wrote a test framefork at Ericsson Linux DC that executed Perl and Expect test cases.}
+\cvskillentry{}{4}{Perl}{7}{Wrote a test framework at Ericsson Linux DC that executed Perl and Expect test cases.}
 \cvskillentry{}{3}{PHP}{2}{Used to develop my personal homepage a long time ago.}
 \cvskillentry{}{4}{Python}{15}{I wrote a test framework and corresponding test cases. Python has also been used for misc scripting in bigger projects throughout the years.}
 \cvskillentry{}{3}{Ruby}{2}{Used to write test cases at Radio SW. Very nice and friendly scripting language with a lot of handy predefined functions.}
 \cvskillentry{}{5}{Tcl/Expect}{13}{I sometimes use Expect for automation and test cases in different projects.}
 
+% Software Tools
 \cvskillentry*{Tools:}{3}{Buildroot}{3}{Used to build embedded Linux OS.}
-\cvskillentry{}{3}{Docker}{3}{Used when isolating applications at Ericsson Testbed}
-\cvskillentry{}{3}{ClearCase}{3}{Version control system used at Ericsson but replaced by Git}
+\cvskillentry{}{3}{Docker}{3}{Used when isolating applications at Ericsson Testbed.}
+\cvskillentry{}{3}{ClearCase}{3}{Version control system used at Ericsson but replaced by Git.}
 \cvskillentry{}{5}{Gerrit}{10}{Code reviewing tool used in most of my projects together with Git and Jenkins.}
 \cvskillentry{}{5}{Git}{13}{Simply the best version control system out there.}
 \cvskillentry{}{4}{Jenkins}{10}{Combined with Gerrit and Git, you get the best tool for continuous integration.}
@@ -265,6 +255,7 @@ knowledge in research and software development.
 \cvskillentry{}{5}{Vim}{20}{My main editor used for coding and editing.}
 \cvskillentry{}{3}{Yocto/BitBake/Poky}{3}{Used to build embedded Linux OS.}
 
+% Operating Systems
 \cvskillentry*{OS:}{5}{Linux}{23}{Starting with RedHat, Slackware, Linux From Scratch and settling for Ubuntu.}
 \cvskillentry{}{3}{OSE}{5}{The main OS in the old Ericsson Radio product.}
 \cvskillentry{}{3}{Solaris}{5}{Primary OS at the university.}
@@ -272,43 +263,53 @@ knowledge in research and software development.
 
 \cvskillentry*[1em]{Methods}{4}{Kanban/Scrum}{5}{Team leader for Radio Software Board team.}
 
-%\begin{category}{Skills}
-%\citembullet Fluent spoken/written Swedish, English, Syriac Aramaic; fair German; beginner Chinese-Mandarin.
-%\end{category}
-%
-%%===============================================================================
-%% Hobbies
-%%===============================================================================
-%%\begin{category}{Hobbies}
-%%\citemnobullet CrossFit, Indoor (floor) Hockey, Table Tennis
-%%\end{category}
-%
-%%===============================================================================
-%% Reference
-%%===============================================================================
+\section{Languages}
+\cvitemwithcomment{Swedish}{Native speaker}{Born and raised in Sweden}
+\cvitemwithcomment{English}{Fluent}{Thanks to early training since primary school}
+\cvitemwithcomment{Aramaic}{Fluent}{Ancient christian language spoken by my parents}
+\cvitemwithcomment{German}{Fair}{Learned in school}
+
+%===============================================================================
+% Reference
+%===============================================================================
 %\begin{category}{References}
 %\citemnobullet Will be supplied on request.
-%%\citem{Vice-chancellor Inge S\"oderkvist} (Thesis supervisor) \\
-%%Lule\aa\ University of Technology \\
-%%Department of Mathematics \\
-%%S-97187 Lule\aa, Sweden \\
-%%\ \\
-%%Phone: +46 (0)920 492130 \\
-%%Fax: +46 (0)920 491073 \\
-%%Email: inge@sm.luth.se \\
-%%Web site: http://www.ltu.se/staff/i/ingsor
-%
-%%\citem{Professor J. Christopher Beck} \\
-%%University of Toronto \\
-%%Department of Mechanical \& Industrial Engineering and \\
-%%Department of Computer Science \\
-%%5 King's College Rd. \\
-%%Toronto, ON M5S 3G8, Canada \\
-%%\ \\
-%%Phone: +1 416 946 8854 \\
-%%Fax: +1 416 878 7753 \\
-%%Email: jcb@mie.utoronto.ca \\
-%%Web site: http://www.mie.utoronto.ca/staff/profiles/beck
+%\citem{Vice-chancellor Inge S\"oderkvist} (Thesis supervisor) \\
+%Lule\aa\ University of Technology \\
+%Department of Mathematics \\
+%S-97187 Lule\aa, Sweden \\
+%\ \\
+%Phone: +46 (0)920 492130 \\
+%Fax: +46 (0)920 491073 \\
+%Email: inge@sm.luth.se \\
+%Web site: http://www.ltu.se/staff/i/ingsor
+
+%\citem{Professor J. Christopher Beck} \\
+%University of Toronto \\
+%Department of Mechanical \& Industrial Engineering and \\
+%Department of Computer Science \\
+%5 King's College Rd. \\
+%Toronto, ON M5S 3G8, Canada \\
+%\ \\
+%Phone: +1 416 946 8854 \\
+%Fax: +1 416 878 7753 \\
+%Email: jcb@mie.utoronto.ca \\
+%Web site: http://www.mie.utoronto.ca/staff/profiles/beck
 %\end{category}
-%
+
+%===============================================================================
+% Publications
+%===============================================================================
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % publications is the name of a BibTeX file
+
+%===============================================================================
+% Research Projects
+%===============================================================================
+%\begin{category}{Research \\ Projects}
+%\citembullet ``Modelling Security Protocol Synthesis with AI Planning'', University of Toronto, ON, Canada (December 2006).
+%\citembullet ``Density Functional Theory and a Simulation of Water Absorption on a Germanium Surface'', Lule\aa\ University of Technology, Sweden (March 2005).
+%\end{category}
+
 \end{document}
