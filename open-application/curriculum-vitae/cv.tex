@@ -57,7 +57,22 @@
 Owner and founder of the consultant company Saitama AB.
 \begin{itemize}
 \item \textbf{\textit{Consultant at Ericsson AB - Systems and Technology (R\&D)}}\newline{}
-Platform research and development of 5G and 6G Testbeds.
+Platform development of 5G and 6G test beds to field trial prototypes. The
+platform team is responsible for the application to run on a real-time system
+and to minimize CPU jitter and NIC latency that the baseband application is
+running on. Hence, we deliver a library based on DPDK and misc tools for upper
+layer applications.
+    \begin{itemize}
+    \item Write UDP server and enable hardware timestamping on NIC.
+    \item Write AF\_XDP high performance packet processing client with zero-copy
+          to run on Mellanox CX-6 and Intel XL710 that support XDP.
+    \item Implement zero-touch automation on Ericsson proprietary hardware and
+          commercial off-the-shelf (COTS) hardware like SuperMicro and Dell
+          PowerEdge machines that has BMC/IPMI/iDRAC. The automation conducts
+          a full deployment on multiple nodes in parallel and configures BIOS,
+          LDAP, autoinstalls unattended Linux OS and sets up real-time OS
+          properties with low CPU jitter and low NIC latency.
+    \end{itemize}
 \end{itemize}
 }
 \bigskip
@@ -225,7 +240,7 @@ and broaden my knowledge in research and software development.
 \cvskillhead[-0.1em]    % Insert standard legend in English and adjust padding
 
 % Programming
-\cvskillentry*{Programming Languages:}{3}{Ansible}{2}{I use Ansible, YAML and Redfish for zero-touch automation on SuperMicro and Dell PowerEdge machines that has BMC/IPMI/iDRAC to configure BIOS, autoinstall and setup real-time OS.}
+\cvskillentry*{Programming Languages:}{3}{Ansible}{2}{I use Ansible, YAML and Redfish for zero-touch automation.}
 \cvskillentry{}{2}{Assembler}{1}{Mips32 course at university.}
 \cvskillentry{}{5}{Bash}{23}{Used in most of my work projects and at home to quickly write scripts with minimum dependencies. Also used together with Sed, Awk and Regular Expressions.}
 \cvskillentry{}{4}{C/C++}{15}{I have used C/C++ in most of the big Linux embedded projects, Linux applications, kernel modules and patches.}
