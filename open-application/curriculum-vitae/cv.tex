@@ -63,7 +63,8 @@ and to minimize CPU jitter and NIC latency that the baseband application is
 running on. Hence, we deliver a library based on DPDK and misc tools for upper
 layer applications.
     \begin{itemize}
-    \item Write UDP server and enable hardware timestamping on NIC.
+    \item Write UDP server and enable hardware timestamping on NIC to measure
+          packet Round Trip Time (RTT).
     \item Write AF\_XDP high performance packet processing client with zero-copy
           to run on Mellanox CX-6 and Intel XL710 that support XDP.
     \item Implement zero-touch automation on Ericsson proprietary hardware and
