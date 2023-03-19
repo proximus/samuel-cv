@@ -53,23 +53,41 @@
 % Work experience
 %===============================================================================
 \section{Experience}
-\cventry{2018 -- Ongoing}{Senior Research Software Engineer}{Saitama AB}{Stockholm}{Sweden}{
+\cventry{2022 -- Ongoing}{Digital Radio Algorithms Developer}{Saitama AB}{Stockholm}{Sweden}{
+\begin{itemize}
+\item \textbf{\textit{Consultant at Ericsson AB - Hardware Department}}\newline{}
+Predevelopment of firmware for algorithm control and functions in Micro
+Controllers (also called Device Processors (DP) in Ericsson terms). With the
+help of DPs, Power Amplifiers can be made efficient by reducing the distortion
+created in their non-linear regions.
+    \begin{itemize}
+    \item Write in Matlab and C, Digital Pre-Distortion (DPD) software to
+          increase the efficiency of Power Amplifiers.
+    \item Use Xilinix SDK or Vitis IDE to implement and debug the FPGA and
+          software load on the target.
+    \end{itemize}
+\end{itemize}
+}
+\bigskip
+
+\cventry{2018 -- 2022}{Senior Research Software Engineer}{Saitama AB}{Stockholm}{Sweden}{
 \begin{itemize}
 \item \textbf{\textit{Consultant at Ericsson AB - Systems and Technology (R\&D)}}\newline{}
 Platform research and development of 5G and 6G testbeds to field trial
-prototypes. Responsible for the upper layer baseband applications to run on a
+prototypes. Responsible for the upper layer BaseBand applications to run on a
 real-time OS by minimizing CPU jitter and NIC latency.
     \begin{itemize}
     \item Write UDP server and enable hardware timestamping on NIC to measure
           packet Round Trip Time (RTT).
     \item Write AF\_XDP high performance packet processing client with zero-copy
           to run on Mellanox CX-6 and Intel XL710 that support XDP.
-    \item Implement zero-touch automation on Ericsson proprietary hardware and
-          commercial off-the-shelf (COTS) hardware like SuperMicro and Dell
-          PowerEdge machines that has BMC/IPMI/iDRAC. The automation conducts
-          a full deployment on multiple nodes in parallel and configures BIOS,
-          LDAP, autoinstalls unattended Linux OS and sets up real-time OS
-          properties with low CPU jitter and low NIC latency.
+    \item Implement zero-touch automation using Ansible on Ericsson proprietary
+          hardware and commercial off-the-shelf (COTS) hardware like SuperMicro,
+          Dell PowerEdge machines that has BMC/IPMI/iDRAC and Mellanox SN4700
+          400GbE switches with Cumulus. The automation conducts a full
+          deployment of OS on multiple nodes in parallel and configures BIOS,
+          LDAP, PTP, auto installs unattended Linux or Cumulus OS and sets up
+          real-time OS  properties with low CPU jitter and low NIC latency.
     \end{itemize}
 \end{itemize}
 }
@@ -247,10 +265,10 @@ and broaden my knowledge in research and software development.
 \cvskillentry{}{3}{HTML}{2}{Used to develop my personal homepage a long time ago.}
 \cvskillentry{}{4}{Java}{2}{From different courses at university.}
 \cvskillentry{}{5}{\LaTeX}{10}{I've used \LaTeX{} in everything from thesis report, research papers, my company annual reports to this CV.}
-\cvskillentry{}{3}{Listp/Scheme}{3}{Did the SICP course at University and to configure my Emacs editor.}
+\cvskillentry{}{4}{Listp/Scheme}{3}{Did the SICP course at University and to configure my Emacs editor.}
 \cvskillentry{}{4}{Maple}{3}{Used in mathematics courses at the university.}
 \cvskillentry{}{4}{Matlab}{5}{Used in mathematics courses at the university and while working at Ericsson research.}
-\cvskillentry{}{3}{Pascal}{4}{Self-taught Turbo Pascal as a child.}
+\cvskillentry{}{4}{Pascal}{4}{Self-taught Turbo Pascal as a child.}
 \cvskillentry{}{5}{Perl}{7}{Wrote a test framework at Ericsson Linux DC that executed Perl and Expect test cases.}
 \cvskillentry{}{3}{PHP}{2}{Used to develop my personal homepage a long time ago.}
 \cvskillentry{}{5}{Python}{15}{I wrote a test framework and corresponding test cases. Python has also been used for misc scripting in bigger projects throughout the years.}
@@ -266,10 +284,10 @@ and broaden my knowledge in research and software development.
 \cvskillentry{}{5}{Jenkins}{10}{Combined with Gerrit and Git, you get the best tool for continuous integration.}
 \cvskillentry{}{3}{SVN}{1}{Version control system that I used when working at Vanderbilt.}
 \cvskillentry{}{5}{Vim}{20}{My main editor used for coding and editing.}
-\cvskillentry{}{4}{Yocto/BitBake/Poky}{3}{Used to build embedded Linux OS.}
+\cvskillentry{}{5}{Yocto/BitBake/Poky}{3}{Used to build embedded Linux OS.}
 
 % Operating Systems
-\cvskillentry*{OS:}{5}{Linux}{23}{Starting with RedHat, Slackware, Linux From Scratch and settling for Ubuntu.}
+\cvskillentry*{OS:}{5}{Linux}{23}{Started with RedHat, Slackware, Linux From Scratch and settled for Ubuntu.}
 \cvskillentry{}{3}{OSE}{5}{The main OS in the old Ericsson Radio product.}
 \cvskillentry{}{4}{Solaris}{5}{Primary OS at the university.}
 \cvskillentry{}{5}{Windows/MS-DOS}{25}{Dual booting Windows only when playing PC games at rare occasions.}
