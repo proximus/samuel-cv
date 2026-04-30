@@ -25,7 +25,8 @@ all: $(TARGETS)
 # Create cv pdf
 cv:
 	make -C open-application/curriculum-vitae
-	mv open-application/curriculum-vitae/cv.pdf samuel-cv.pdf
+	mv open-application/curriculum-vitae/cv-en.pdf samuel-cv-en.pdf
+	mv open-application/curriculum-vitae/cv-sv.pdf samuel-cv-se.pdf
 
 # Create cover letter pdf
 letter:
@@ -36,6 +37,6 @@ letter:
 clean:
 	make -C open-application/curriculum-vitae clean
 	make -C open-application/cover-letter clean
-	rm -fv samuel-{cv,letter}.pdf
+	rm -fv samuel-{cv-en,cv-sv,letter}.pdf
 
 .PHONY: cv letter
