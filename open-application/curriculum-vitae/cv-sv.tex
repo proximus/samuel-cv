@@ -90,7 +90,7 @@ Massive MIMO Granada-programmet samt BALI-projektet för radioprodukten AAS AIR
     \item Utvecklare med fokus på Uplink/Rx-delen av mjukvaran, bestående av drivrutiner och testfall.
     \item Driva arbetssättet genom dagliga stand-ups, sprintgranskningar, retrospektiv, refinement och sprintplanering.
     \item Produktägare för Uplink/Rx-delen av produkten. Initierade backloggen för hela RadioSW BALI-projektet i Jira. Skapa, förfina och planera backloggen för teamet.
-    \item Använda verktyg som Yocto, Jira, Git, Gerrit, Jenkins, C/C++, Java och NeoVim med AI-integration (Codeium).
+    \item Utvecklingsverktyg: C/C++, Java Yocto, Git, Gerrit, Jenkins, Jira och NeoVim.
     \end{itemize}
 \end{itemize}
 }
@@ -110,7 +110,7 @@ sikt och säkerhet.
     \begin{itemize}
     \item Leda teammöten, dagliga stand-ups, sprintgranskningar, retrospektiv, refinement och sprintplanering. Hålla backloggen uppdaterad med tillräcklig kvalitet. Skapa väl dokumenterade uppgifter och fördela dem med ett bra arbetsflöde.
     \item Utveckla Linux-kärndrivrutiner och intern mjukvara för att stödja ljussensorn, EEPROM, automatisk bakgrundsbelysning, knappsatser, audio codec, PXE bootable installationsavbilder för kund och produktion, I2C-kommunikation samt CAN-FD MCU.
-    \item Använda verktyg som Yocto, Devtool, Jira, Git, Bitbucket, Jenkins samt C/C++, Python, Bash och Vim.
+    \item Utvecklingsverktyg: C/C++, Python, Bash, Yocto, Devtool, Jira, Git, BitBucket, Jenkins och NeoVim.
     \end{itemize}
 \end{itemize}
 }
@@ -132,6 +132,7 @@ Shared-DPD.
     \begin{itemize}
     \item Utveckla Digital Pre-Distortion (DPD)-mjukvara i Matlab och C för att öka effektiviteten hos effektförstärkare.
     \item Använda Xilinx SDK eller Vitis IDE för att implementera och felsöka FPGA samt mjukvaruladdning på målplattformen.
+    \item Utvecklingsverktyg: C, MATLAB, Yocto, Git, Xilinx SDK, GDB och Vim.
     \end{itemize}
 \end{itemize}
 }
@@ -148,10 +149,12 @@ NIC-latens.
     \begin{itemize}
     \item Utveckla en UDP-server och aktivera hårdvarutidsstämpling på NIC för att mäta paketens round trip time (RTT).
     \item Utveckla en högpresterande AF\_XDP-klient för paketbearbetning med zero-copy, för körning på Mellanox CX-6 200Gb/s och CX-7 400 Gb/s Ethernet nätverkskort som stöder XDP.
+    \item Utvecklade applikation som körs på Ericssons Many-Core Architecture (EMCA), vilket är en avancerad ASIC med digital logik, mixed-signal-innehåll och processorer.
     \item Utveckla ett testramverk och testfall i Python, Pexpect och YAML.
     \item Skapa och konfiguera realtids-OS baserat på Ubuntu. Stödja avdelningen och se till att realtidsapplikationen för basbandet kan köra på OS:et med höga krav på låg CPU-jitter.
     \item Installera och ansvara för 5G och 6G hårdvaran och delar av mjukvaran i labbet.
     \item Implementera zero-touch-automation med Ansible på Ericssons egenutvecklade hårdvara samt standardhårdvara (COTS) som Supermicro- och Dell PowerEdge-servrar med BMC/IPMI/iDRAC samt Mellanox SN4700 400GbE-switchar med Cumulus. Automationen genomför fullständig OS-distribution på flera noder parallellt och konfigurerar BIOS, LDAP och PTP, installerar Linux eller Cumulus OS obevakat samt sätter upp realtidsegenskaper med låg CPU-jitter och låg NIC-latens.
+    \item Utvecklingsverktyg: C/C++, Assembler, MATLAB, Python, Ansible, YAML, Bash, Git, Jenkins and Vim.
     \end{itemize}
 \end{itemize}
 }
@@ -159,6 +162,7 @@ NIC-latens.
 
 % 20161201 - 20180930
 \cventry{Dec 01, 2016-- Sep 30, 2018 }{Senior Software Architect och Designer}{Realtime Embedded AB}{Stockholm}{Sweden}{
+Fast anställd som konsult på Realtime Embedded med uppdrag hos olika kunder.
 \begin{itemize}
 \item \textbf{\textit{Konsult på NorthStar}}\newline{}
 Utveckling av NorthStar Advanced Connected Energy (ACE) gateway för smarta
@@ -166,10 +170,11 @@ batterisystem som kommunicerar med varandra genom Bluetooth.
     \begin{itemize}
     \item Använda Python för att implementera extern larmhantering för batterisystemet. Säkerställa att mjukvaran kan trigga och styra reläer via GPIO-pinnar i gatewayen när korrekt signalering via IPC-meddelanden tas emot.
     \item Implementera funktionella tester samt bibliotek/paket med hjälp av 9pm-testframeworket.
+    \item Utvecklingsverktyg: Python, Tcl/Expect, Bash, Git, Gerrit, Jenkins och Vim.
     \end{itemize}
 \item \textbf{\textit{Konsult på Vanderbilt (f.d. Bewator)}}\newline{}
-Utveckling av Linux-kärndrivrutiner för passerkontrollsystem E100
-centralenhet bestående av MCU AT91SAM9x5-EK till Omnissystemet.
+Utveckling av Linux-kärndrivrutiner för passerkontrollsystemet Omnis och
+produkten E100 centralenhet som baseras på AT91SAM9x5-EK MCU.
     \begin{itemize}
     \item Skriva en GPIO-testapplikation för att styra reläer.
     \item Skriva en testapplikation för Atmel AT91 ADC för att läsa råa spänningsvärden.
@@ -178,6 +183,7 @@ centralenhet bestående av MCU AT91SAM9x5-EK till Omnissystemet.
     \item Skriva Linux-kärndrivrutiner och testapplikation för kortläsare med Magstripe (Clock/Data) och Wiegand (Data/Data).
     \item Skriva ett firmwareuppgraderings-/flashskript för att automatiskt uppdatera systemet via SD/MMC-kort vid uppstart.
     \item Modifiera och patcha bootloadern från Atmel, kallad at91bootstrap, för att åtgärda buggar och möjliggöra uppstart från SD/MMC eller NAND-flash.
+    \item Utvecklingsverktyg: C, Bash, Buildroot, Git och Vim.
     \end{itemize}
 \end{itemize}
 }
@@ -186,10 +192,9 @@ centralenhet bestående av MCU AT91SAM9x5-EK till Omnissystemet.
 % 20110610 - 20161123
 \cventry{Jun 10, 2011-- Nov 23, 2016 }{Software Developer och Scrum Master}{Ericsson AB}{Stockholm}{Sweden}{
 Anställd på Ericsson i Kista som mjukvaruutvecklare och Scrum Master till Radio
-Base Station 6000-serien. Utvecklad drivrutiner och simulatorn för
-radiohårdvaran. För att spara tid och pengar så brukar vi emulera hårdvaran
-först och därefter utveckla drivrutinerna tills de fysiska korten anländer från
-fabriken.
+Base Station 6000-serien. Utvecklade drivrutiner och simulatorn för RadioSW
+teamen. För att spara tid och pengar så brukar vi emulera hårdvaran först och
+därefter utveckla drivrutinerna tills de fysiska korten anländer från fabriken.
     \begin{itemize}
     \item Utveckling av radiomjukvarudrivrutiner för Radio SW-plattformar. Kortuppstart (board bring-up) och integration av hårdvaruprodukter såsom Antenna Integrated Radio (AIR), mikroradioenheter, nästa generations radioenheter och 5G-programmet.
     \item Skapa programmet Nova för att utvecklaren lättare kan köra simulatorn. Nova används flitigt även idag för att utveckla 5G och 6G radios på avdelningen.
@@ -197,28 +202,31 @@ fabriken.
     \item Jobba i Ottawa, Kanada på korttidsuppdrag (3 månader) för hårdvaruavdelningen som mjukvaruintegratör för Platform 5.2 AIR 32-produkter efter köpet av Nortel.
     \item Introducera verktyg som Git, Gerrit, Jenkins, BitBake och Autotools till hela RadioSW och fasa ut ClearCase.
     \item Agera teknisk Scrum/Kanban Master för att leda och coacha ett tvärfunktionellt drivrutinsteam på 10 personer. Genomföra dagliga scrummöten, sprintretrospektiv, följa upp flödesstatistik, eliminera slöseri och stötta produktägaren.
+    \item Utvecklingsverktyg: C/C++, Green Hills Hardware Debugger Probe, Ruby, Tcl/Ecpect, Python, Bash, Git, Gerrit, Jenkins och Vim.
     \end{itemize}
 }
 \bigskip
 
 % 20080825 - 20110609
-\cventry{Aug 25, 2008-- Jun 09, 2011 }{Software Developer}{SAAB Combitech}{Stockholm}{Sweden}{
-Fast anställd som konsult på SAAB Combitech på uppdrag hos Ericsson AB Linux
-Center i Älvsjö och Telefonplan. Där skapade jag ett testramverk i Perl som
-används för att köra automatiserade testfall. Testfallen skrevs i Tcl/Expect,
-men ramverket kunde även köra testfall i Perl, Bash och Python samt stödde
-NetConf och YAML. Testramverket blev en egen produkt och användes för att testa
-olika Linuxbaserade inbyggda operativsystem i många av Ericssons produkter inom
-avdelningen. Jag fortsatte inom samma avdelning, men som designer, där jag
-började utveckla Linux-kärnpatchar och bidrog med patchar upstream till
-Linux-kärnan.
+\cventry{Aug 25, 2008-- Jun 09, 2011 }{Software Developer \& Testare}{SAAB Combitech}{Stockholm}{Sweden}{
+Fast anställd som konsult på SAAB Combitech på uppdrag hos Ericsson AB Linux Center i Älvsjö och Telefonplan. 
+\begin{itemize}
+\item \textbf{\textit{Konsult på Ericsson AB - Linux Development Center}}\newline{}
+Utvecklade automatiserad testinfrastruktur och Linux-plattformsprogramvara för
+inbyggda telekomsystem, inklusive LOTC, ENUX och CPBS. Arbetade genom hela
+stacken, från testautomation till Linux-kärnan och plattformsutveckling.
+Ericssons ENUX Linux-distribution användes för virtualiserad emulering av APZ
+Classic-runtime-miljön för PLEX-baserade system såsom AXE.
     \begin{itemize}
-    \item Utveckla Linux-kärndrivrutiner och Linux-kärnpatchar till ECC (Error Detection and Correction) memory scrubbing. Detta hindrar datakorruption och systemkrascher orsakade av strålningsinducerade bitfel (t.ex. kosmisk strålning, elektriskt brus)
-    \item Utveckla Ericssons Linuxdistribution kallad ENUX, som används för att köra en virtuell maskin som emulerar APZ Classic runtime-miljö för PLEX-baserade program såsom AXE.
-    \item Designer och testare för andra plattformsprodukter inom Ericsson, såsom CPBS, GSDI och IS, som körs på GEP-korthårdvara.
-    \item Utveckla testramverk och testfall för Ericssons OS produkter som Linux Open-source Telecom Cluster (LOTC) och SLES Virtual Platform (SVP) baserade på Xen.
-    \item Support i kundforum för Open Multimedia Platform (OMP). Hantera och lösa felrapporter för samtliga produkter.
+    \item Arkitekterade och utvecklade ett Perl-baserat ramverk för automatiserad testning av Linux-validering i inbyggda system.
+    \item Designade och implementerade testsviter och testfall i Tcl/Expect, Perl, Bash och Python, med integrerat stöd för NETCONF och YAML.
+    \item Utvecklade test- och valideringssviter för LOTC, Xen-baserad SLES Virtual Platform (SVP) samt plattformsprodukter inklusive GSDI och IS på GEP-hårdvara.
+    \item Utvecklade Linux-kernelpatchar för ECC (Error Detection and Correction) minnessanering (memory scrubbing), vilket förhindrade datakorruption och systemkrascher orsakade av strålningsinducerade bitfel (t.ex. kosmisk strålning och elektriskt brus).
+    \item Bidrog med patchar till Linux-kärnan upstream.
+    \item Gav teknisk support för Open Multimedia Platform (OMP) genom att felsöka och åtgärda defekter i produktpaketet.
+    \item Utvecklingsverktyg: C, Python, Perl, Tcl/Expect, YAML, Bash, Git, Gerrit and Vim. 
     \end{itemize}
+\end{itemize}
 }
 \bigskip
 
